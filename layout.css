@@ -1,0 +1,123 @@
+@import url("https://use.typekit.net/jam7xgr.css");
+
+:root {
+    --whitelight: #fcfcfc;
+    --red-hue: #f6240d;
+    --brown-hue: #a4561d;
+    --light-green-hue: #52882e;
+    --green-hue: #00ba3f;
+}
+
+
+html, body {
+    font-family: 'macha', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+    background-color: var(--whitelight);
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 2px dashed var(--red-hue);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em;
+    margin: 1em;
+    border-top: 2px dashed var(--red-hue);
+}
+
+figure {
+    margin: 0;
+}
+
+#logo {
+    height: 100px;
+    padding: 10px 20px;
+}
+
+h1, h2, h3, h4, h5, h6  {
+    font-family: 'fira-sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows:  minmax(100px, auto) minmax(max-content, 2fr);
+    /* border: 3px solid var(--red-hue); */
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 5px dotted var(--brown-hue); */
+    flex-wrap: wrap;
+
+}
+
+.profile {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: var(--whitelight);
+  }
+
+  .profile img {
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+.carts {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: var(--brown-hue);
+    min-height: 100px;
+  }
+
+.cart-details {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: var(--light-green-hue);
+  }
+
+
+figcaption {
+    font-size: x-small;
+    color: gray;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+#copyright {
+    font-size: x-small;
+    color: gray;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* fonts */
+.fira-sans {
+    font-family: 'fira-sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.macha {
+    font-family: 'macha', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
